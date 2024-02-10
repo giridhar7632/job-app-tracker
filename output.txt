@@ -1,0 +1,107 @@
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+
+| id |     name     |    type     |    country    | manufacturer | launch_date | landing_date | status |
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+
+| 1  | Falcon 9     | Heavy       | United States | SpaceX       | 2023-10-20  | 2023-10-20   | Active |
+| 2  | Falcon Heavy | Super Heavy | United States | SpaceX       | 2023-11-01  | 2023-11-01   | Active |
+| 3  | Starship     | Super Heavy | United States | SpaceX       | 2023-12-01  | 2023-12-01   | Active |
+| 4  | New Glenn    | New Shepard | United States | Blue Origin  | 2023-12-31  | 2024-01-01   | Active |
+| 5  | Ariane 6     | Ariane 5    | France        | ArianeGroup  | 2024-03-01  | 2024-03-01   | Active |
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+
++----+----------------------------+---------------+---------------+--------------+-------------+--------------+---------+
+| id |            name            |     type      |    country    | manufacturer | launch_date | landing_date | status  |
++----+----------------------------+---------------+---------------+--------------+-------------+--------------+---------+
+| 1  | Starlink-12345             | Communication | United States | SpaceX       | 2023-10-20  | 2023-10-20   | Active  |
+| 2  | James Webb Space Telescope | Observatory   | United States | NASA         | 2021-12-25  | 2021-12-25   | Active  |
+| 3  | Hubble Space Telescope     | Observatory   | United States | NASA         | 1990-04-24  | 2019-10-31   | Retired |
+| 4  | Voyager 1                  | Probe         | United States | NASA         | 1977-09-05  |              | Active  |
+| 5  | Voyager 2                  | Probe         | United States | NASA         | 1977-08-20  |              | Active  |
++----+----------------------------+---------------+---------------+--------------+-------------+--------------+---------+
++----+----------------------------------+---------------+----------------------------------+
+| id |               name               |    country    |             location             |
++----+----------------------------------+---------------+----------------------------------+
+| 1  | Kennedy Space Center             | United States | Cape Canaveral, Florida          |
+| 2  | Cape Canaveral Air Force Station | United States | Cape Canaveral, Florida          |
+| 3  | Vandenberg Space Force Base      | United States | Santa Barbara County, California |
+| 4  | Baikonur Cosmodrome              | Russia        | Kyzylorda Region, Kazakhstan     |
+| 5  | Jiuquan Satellite Launch Center  | China         | Aksu Prefecture, Xinjiang        |
++----+----------------------------------+---------------+----------------------------------+
++----+----------------------------------+---------------+-------------------------+
+| id |               name               |    country    |        location         |
++----+----------------------------------+---------------+-------------------------+
+| 1  | Cape Canaveral Landing Complex 1 | United States | Cape Canaveral, Florida |
+| 2  | Cape Canaveral Landing Complex 2 | United States | Cape Canaveral, Florida |
+| 3  | Landing Zone 1                   | United States | McGregor, Texas         |
+| 4  | Landing Zone 2                   |               | Mars                    |
+| 5  | Xichang Satellite Launch Center  | China         | Xichang, Sichuan        |
++----+----------------------------------+---------------+-------------------------+
++----+-----------+----------------+-------------+---------------+
+| id | rocket_id | launch_site_id | launch_date | launch_status |
++----+-----------+----------------+-------------+---------------+
+| 1  | 1         | 1              | 2023-10-20  | success       |
+| 2  | 2         | 1              | 2023-11-01  | success       |
+| 3  | 3         | 1              | 2023-12-01  | success       |
+| 4  | 4         | 1              | 2023-12-31  | success       |
+| 5  | 5         | 1              | 2024-03-01  | success       |
++----+-----------+----------------+-------------+---------------+
++----+-----------+-----------------+--------------+----------------+
+| id | rocket_id | landing_site_id | landing_date | landing_status |
++----+-----------+-----------------+--------------+----------------+
+| 1  | 1         | 1               | 2023-10-20   | success        |
+| 2  | 2         | 1               | 2023-11-01   | success        |
+| 3  | 3         | 1               | 2023-12-01   | success        |
+| 4  | 4         | 1               | 2023-12-31   | failed         |
+| 5  | 5         | 1               | 2024-03-01   | success        |
++----+-----------+-----------------+--------------+----------------+
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+----+-----------+----------------+-------------+---------------+
+| id |     name     |    type     |    country    | manufacturer | launch_date | landing_date | status | id | rocket_id | launch_site_id | launch_date | launch_status |
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+----+-----------+----------------+-------------+---------------+
+| 1  | Falcon 9     | Heavy       | United States | SpaceX       | 2023-10-20  | 2023-10-20   | Active | 1  | 1         | 1              | 2023-10-20  | success       |
+| 2  | Falcon Heavy | Super Heavy | United States | SpaceX       | 2023-11-01  | 2023-11-01   | Active | 2  | 2         | 1              | 2023-11-01  | success       |
+| 3  | Starship     | Super Heavy | United States | SpaceX       | 2023-12-01  | 2023-12-01   | Active | 3  | 3         | 1              | 2023-12-01  | success       |
+| 4  | New Glenn    | New Shepard | United States | Blue Origin  | 2023-12-31  | 2024-01-01   | Active | 4  | 4         | 1              | 2023-12-31  | success       |
+| 5  | Ariane 6     | Ariane 5    | France        | ArianeGroup  | 2024-03-01  | 2024-03-01   | Active | 5  | 5         | 1              | 2024-03-01  | success       |
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+----+-----------+----------------+-------------+---------------+
++----+----------------------------+---------------+---------------+--------------+-------------+--------------+---------+----+-----------+-----------------+--------------+----------------+
+| id |            name            |     type      |    country    | manufacturer | launch_date | landing_date | status  | id | rocket_id | landing_site_id | landing_date | landing_status |
++----+----------------------------+---------------+---------------+--------------+-------------+--------------+---------+----+-----------+-----------------+--------------+----------------+
+| 1  | Starlink-12345             | Communication | United States | SpaceX       | 2023-10-20  | 2023-10-20   | Active  | 1  | 1         | 1               | 2023-10-20   | success        |
+| 2  | James Webb Space Telescope | Observatory   | United States | NASA         | 2021-12-25  | 2021-12-25   | Active  | 2  | 2         | 1               | 2023-11-01   | success        |
+| 3  | Hubble Space Telescope     | Observatory   | United States | NASA         | 1990-04-24  | 2019-10-31   | Retired | 3  | 3         | 1               | 2023-12-01   | success        |
+| 4  | Voyager 1                  | Probe         | United States | NASA         | 1977-09-05  |              | Active  | 4  | 4         | 1               | 2023-12-31   | failed         |
+| 5  | Voyager 2                  | Probe         | United States | NASA         | 1977-08-20  |              | Active  | 5  | 5         | 1               | 2024-03-01   | success        |
++----+----------------------------+---------------+---------------+--------------+-------------+--------------+---------+----+-----------+-----------------+--------------+----------------+
++----+-----------+----------------+-------------+---------------+
+| id | rocket_id | launch_site_id | launch_date | launch_status |
++----+-----------+----------------+-------------+---------------+
+| 1  | 1         | 1              | 2023-10-20  | success       |
+| 2  | 2         | 1              | 2023-11-01  | success       |
+| 3  | 3         | 1              | 2023-12-01  | success       |
+| 4  | 4         | 1              | 2023-12-31  | success       |
+| 5  | 5         | 1              | 2024-03-01  | success       |
++----+-----------+----------------+-------------+---------------+
++----+-----------+-----------------+--------------+----------------+
+| id | rocket_id | landing_site_id | landing_date | landing_status |
++----+-----------+-----------------+--------------+----------------+
+| 1  | 1         | 1               | 2023-10-20   | success        |
+| 2  | 2         | 1               | 2023-11-01   | success        |
+| 3  | 3         | 1               | 2023-12-01   | success        |
+| 5  | 5         | 1               | 2024-03-01   | success        |
++----+-----------+-----------------+--------------+----------------+
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+
+| id |     name     |    type     |    country    | manufacturer | launch_date | landing_date | status |
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+
+| 1  | Falcon 9     | Heavy       | United States | SpaceX       | 2023-10-20  | 2023-10-20   | Active |
+| 2  | Falcon Heavy | Super Heavy | United States | SpaceX       | 2023-11-01  | 2023-11-01   | Active |
+| 3  | Starship     | Super Heavy | United States | SpaceX       | 2023-12-01  | 2023-12-01   | Active |
+| 5  | Ariane 6     | Ariane 5    | France        | ArianeGroup  | 2024-03-01  | 2024-03-01   | Active |
++----+--------------+-------------+---------------+--------------+-------------+--------------+--------+
++----------------+--------------+
+| launch_site_id | num_launches |
++----------------+--------------+
+| 1              | 5            |
++----------------+--------------+
++----+-----------+----------------+-------------+---------------+----+-----------+-----------------+--------------+----------------+
+| id | rocket_id | launch_site_id | launch_date | launch_status | id | rocket_id | landing_site_id | landing_date | landing_status |
++----+-----------+----------------+-------------+---------------+----+-----------+-----------------+--------------+----------------+
+| 1  | 1         | 1              | 2023-10-20  | success       | 1  | 1         | 1               | 2023-10-20   | success        |
++----+-----------+----------------+-------------+---------------+----+-----------+-----------------+--------------+----------------+

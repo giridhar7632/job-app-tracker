@@ -1,0 +1,16 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    username TEXT NOT NULL,
+    hash TEXT NOT NULL
+);
+
+CREATE TABLE applications (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user TEXT NOT NULL,
+    company TEXT NOT NULL,
+    position TEXT NOT NULL,
+    ctc NUMERIC,
+    status TEXT NOT NULL,
+    last_updated DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (id)
+);
